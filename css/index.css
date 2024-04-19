@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  box-shadow: 0 2px 4px #e2ebfc;
+}
+header .container {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .logo {
+  color: #2a73dd;
+  font-size: 28px;
+  font-weight: 600;
+}
+header .container a {
+  color: #1d365e;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 40px;
+  transition: 0.3s;
+  position: relative;
+}
+header .container a:hover, header .container a.active {
+  color: #2a73dd;
+}
+header .container a::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: #2a73dd;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+header .container a:hover::before, header .container a.active::before {
+  width: 100%;
+}
+
+.banner {
+  height: 100vh;
+  background-size: cover;
+  background-position: bottom;
+  background-image: url(../image/product-header-bg.jpg);
+}
+.banner .container {
+  display: flex;
+  align-items: center;
+}
+.banner .container .img,
+.banner .container .descript {
+  width: 50%;
+}
+.banner .container .img img {
+  width: 80%;
+}
+.banner .container .descript * {
+  margin: 20px 0;
+}
+.banner .container .descript h2 {
+  font-size: 48px;
+  color: #2a73dd;
+}
+.banner .container .descript h3 {
+  color: #1d365e;
+  font-size: 28px;
+}
+.banner .container .descript p {
+  color: #656774;
+}
+.banner .container .descript .shop {
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 15px 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #2a73dd;
+  border: 1px solid #2a73dd;
+  transition: 0.3s;
+}
+.banner .container .descript .shop:hover {
+  color: white;
+  background: #2a73dd;
+}
+.banner .container .descript .infor {
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 15px 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(120deg, #60a4f4, #2a73dd);
+  color: white;
+}
+.banner .container .descript .infor:hover {
+  color: #2a73dd;
+  background: white;
+  border: 1px solid #2a73dd;
+}/*# sourceMappingURL=index.css.map */
